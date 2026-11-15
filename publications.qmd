@@ -1,0 +1,52 @@
+---
+title: "Publications"
+description: "Generated with R from `data/publications.csv`. Add a row to update this page."
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+pubs <- read.csv("data/publications.csv", stringsAsFactors = FALSE)
+pubs <- pubs[order(-pubs$year, seq_len(nrow(pubs))), ]
+```
+
+For the most current list, see my [Google Scholar profile](https://scholar.google.com/citations?user=6iIeMA0AAAAJ). <sup>\*</sup> marks equal first authorship.
+
+```{r}
+#| label: fig-pubs-year
+#| echo: false
+#| fig-height: 2.6
+#| fig-cap: "Publications per year"
+ggplot(pubs, aes(factor(year))) +
+  geom_bar(fill = "#1f4e79", width = 0.7) +
+  geom_text(stat = "count", aes(label = after_stat(count)), vjust = -0.4, size = 3.5) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(x = NULL, y = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid = element_blank(), axis.text.y = element_blank())
+```
+
+```{r}
+#| label: pub-list
+#| echo: false
+#| output: asis
+fmt_pub <- function(p) {
+  authors <- gsub("Devkota J", "**Devkota J**", p$authors, fixed = TRUE)
+  if (isTRUE(p$equal_first) || identical(p$equal_first, "True"))
+    authors <- sub("**Devkota J**", "**Devkota J**<sup>\\*</sup>", authors, fixed = TRUE)
+  links <- c(
+    if (nzchar(p$doi))   sprintf("[DOI](https://doi.org/%s){.badge-link .badge .text-bg-primary}", p$doi),
+    if (!is.na(p$pmid) && nzchar(p$pmid)) sprintf("[PubMed](https://pubmed.ncbi.nlm.nih.gov/%s/){.badge-link .badge .text-bg-secondary}", p$pmid),
+    if (nzchar(p$pmcid)) sprintf("[Full text](https://www.ncbi.nlm.nih.gov/pmc/articles/%s/){.badge-link .badge .text-bg-success}", p$pmcid)
+  )
+  sprintf("- [%s.]{.pub-title}<br>%s.<br>[*%s*, %d]{.pub-meta}<br>%s",
+          p$title, authors, p$journal, p$year, paste(links, collapse = " "))
+}
+for (yr in unique(pubs$year)) {
+  cat("\n## ", yr, "\n\n::: {.pub-list}\n", sep = "")
+  sub <- pubs[pubs$year == yr, ]
+  for (i in seq_len(nrow(sub))) cat(fmt_pub(sub[i, ]), "\n", sep = "")
+  cat(":::\n")
+}
+```

@@ -1,0 +1,17 @@
+{
+  "hash": "f969c20b22e124f6fa032e6b98297cb6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Janardan Devkota\"\nsubtitle: \"Research Associate (Faculty) & Data Scientist · Johns Hopkins Bloomberg School of Public Health\"\ntoc: false\nabout:\n  template: trestles\n  image: profile.svg\n  links:\n    - icon: linkedin\n      text: LinkedIn\n      href: \"https://www.linkedin.com/in/jdevkota/\"\n    - icon: mortarboard-fill\n      text: Google Scholar\n      href: \"https://scholar.google.com/citations?user=6iIeMA0AAAAJ\"\n    - icon: github\n      text: GitHub\n      href: \"https://github.com/Jadevkota\"\n---\n\n\n\n\nI'm a data scientist working in **substance use epidemiology** at Johns Hopkins. I design studies and build the analytic and data-engineering infrastructure behind them: cross-sectional surveys, prospective cohorts, randomized and micro-randomized trials, intensive longitudinal data (EMA, wearables, smartphone GPS), and electronic health records.\n\nMost of my time (about 75%) goes to statistical programming in **R** and **Python**: multilevel and mixed-effects models, GEE, structural equation and latent growth models, principled missing-data handling, simulation-based power analysis, and machine learning for time-series and sensor data. I care about reproducibility. My work uses version-controlled pipelines, documented codebooks, and open code on GitHub.\n\n\n\n\n::: {.stat-row}\n::: {}\n[21]{.num} peer-reviewed publications & preprints\n:::\n::: {}\n[2018&ndash;2026]{.num} publication years\n:::\n::: {}\n[6+]{.num} years at Johns Hopkins\n:::\n:::\n\n\n\n\n### Research interests\n\nCannabis, opioid, tobacco and alcohol use · Ecological momentary assessment · mHealth & just-in-time interventions · Chronic pain · Spatiotemporal methods · Reproducible health data science\n\n### Education\n\n- **MS, Data Science**, Maryville University, St. Louis, MO (2022)\n- **MS, Public Health in Disaster**, University of Oviedo, Spain (2018)\n- **MS, Nutrition and Dietetics**, College of Applied Food and Dairy Technology, Kathmandu (2017)\n- **BS, Public Health**, Nobel College, Kathmandu (2014)\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

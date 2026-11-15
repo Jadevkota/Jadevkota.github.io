@@ -1,0 +1,17 @@
+{
+  "hash": "7dc557f58ed48b1987408fac1100b114",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Welcome to my site\"\ndate: \"2026-11-14\"\ncategories: [news, r, quarto]\ndescription: \"Why I built this site with R and Quarto, and how it deploys itself.\"\n---\n\n\n\n\nThis site is written entirely in R + Quarto. Every page, including the [publication list](../../publications.qmd), is rendered from code. A GitHub Actions workflow rebuilds and publishes the site to GitHub Pages whenever I push to `main`.\n\nI'll use this blog for short notes on multilevel modeling, EMA data workflows, and reproducible research practice.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- rnorm(1000)\nhist(x, main = \"1,000 draws from N(0, 1)\", col = \"#1f4e79\", border = \"white\", xlab = NULL)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

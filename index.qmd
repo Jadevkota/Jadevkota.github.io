@@ -1,0 +1,51 @@
+---
+title: "Janardan Devkota"
+subtitle: "Research Associate (Faculty) & Data Scientist · Johns Hopkins Bloomberg School of Public Health"
+toc: false
+about:
+  template: trestles
+  image: profile.svg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: "https://www.linkedin.com/in/jdevkota/"
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: "https://scholar.google.com/citations?user=6iIeMA0AAAAJ"
+    - icon: github
+      text: GitHub
+      href: "https://github.com/Jadevkota"
+---
+
+I'm a data scientist working in **substance use epidemiology** at Johns Hopkins. I design studies and build the analytic and data-engineering infrastructure behind them: cross-sectional surveys, prospective cohorts, randomized and micro-randomized trials, intensive longitudinal data (EMA, wearables, smartphone GPS), and electronic health records.
+
+Most of my time (about 75%) goes to statistical programming in **R** and **Python**: multilevel and mixed-effects models, GEE, structural equation and latent growth models, principled missing-data handling, simulation-based power analysis, and machine learning for time-series and sensor data. I care about reproducibility. My work uses version-controlled pipelines, documented codebooks, and open code on GitHub.
+
+```{r}
+#| echo: false
+#| output: asis
+pubs <- read.csv("data/publications.csv")
+cat(sprintf(
+'::: {.stat-row}
+::: {}
+[%d]{.num} peer-reviewed publications & preprints
+:::
+::: {}
+[%d&ndash;%d]{.num} publication years
+:::
+::: {}
+[6+]{.num} years at Johns Hopkins
+:::
+:::', nrow(pubs), min(pubs$year), max(pubs$year)))
+```
+
+### Research interests
+
+Cannabis, opioid, tobacco and alcohol use · Ecological momentary assessment · mHealth & just-in-time interventions · Chronic pain · Spatiotemporal methods · Reproducible health data science
+
+### Education
+
+- **MS, Data Science**, Maryville University, St. Louis, MO (2022)
+- **MS, Public Health in Disaster**, University of Oviedo, Spain (2018)
+- **MS, Nutrition and Dietetics**, College of Applied Food and Dairy Technology, Kathmandu (2017)
+- **BS, Public Health**, Nobel College, Kathmandu (2014)

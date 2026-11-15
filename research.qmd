@@ -1,0 +1,26 @@
+---
+title: "Research"
+description: "Selected projects and areas of work."
+---
+
+## National Substance Use Data Initiative (NSDU)
+
+Multi-year longitudinal analysis combining several data sources to describe cannabis, alcohol and opioid use patterns across analytic phases. The work involves harmonizing different longitudinal datasets into unified analytic files with validation checks.
+
+## Cannabis hyperemesis syndrome in EHR data (Truveta)
+
+A two-phase analysis of the Truveta healthcare data model, turning large-scale clinical records into evidence on cannabis hyperemesis syndrome (CHS).
+
+## Smartphone-based smoking interventions for young adults
+
+Data management, randomization design and analysis for a micro-randomized trial of an app-based smoking urge reduction intervention. This included participant recruitment through targeted social media campaigns and spatiotemporal clustering of tobacco and cannabis use from smartphone GPS data. See [Thrul et al., *JMIR Res Protoc* 2025](https://doi.org/10.2196/74388) and [*mHealth* 2025](https://doi.org/10.21037/mhealth-25-17).
+
+## Ecological momentary assessment of substance use
+
+Intensive longitudinal studies of the real-time antecedents and contexts of cannabis, tobacco and alcohol use, including postpartum drinking and chronic pain populations using cannabis and opioids. The models are multilevel (lme4, glmmTMB) and handle compliance and missing-data issues specific to EMA designs.
+
+## Earlier work
+
+- **Person-Centred Public Health for HIV Treatment in Zambia (PCPH):** cost analysis across 32 study sites, comparing research and programmatic costs.
+- **Community TB screening:** REDCap and Qualtrics data systems for screening and follow-up.
+- **International Organization for Migration, Nepal (2015–16):** TB case detection, surveillance and referral networks for people displaced by the 2015 earthquake.

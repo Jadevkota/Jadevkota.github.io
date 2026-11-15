@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Janardan Devkota"
+  description: "Research Associate & Data Scientist — substance use epidemiology, multilevel modeling, and reproducible health data science."
+  site-url: "https://jadevkota.github.io/"   # edit after creating the repo
+  repo-url: "https://github.com/Jadevkota/Jadevkota.github.io"
+  favicon: favicon.svg
+  open-graph: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: methods.qmd
+        text: Methods
+      - href: blog.qmd
+        text: Blog
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/jdevkota/"
+        aria-label: LinkedIn
+      - icon: mortarboard-fill
+        href: "https://scholar.google.com/citations?user=6iIeMA0AAAAJ"
+        aria-label: Google Scholar
+      - icon: github
+        href: "https://github.com/Jadevkota"
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Janardan Devkota"
+    right: "Built with R + Quarto · Deployed with GitHub Actions"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [darkly, theme.scss]
+    toc: true
+    code-fold: show
+    code-tools: true
+    smooth-scroll: true
+
+execute:
+  freeze: auto   # results are cached in _freeze/ — commit that folder

@@ -1,0 +1,76 @@
+---
+title: "Curriculum Vitae"
+---
+
+<!-- Optional: put a PDF copy at files/Devkota_CV.pdf and uncomment the next line -->
+<!-- [Download PDF](files/Devkota_CV.pdf){.btn .btn-primary .btn-sm} -->
+
+## Experience
+
+### Research Associate (Faculty)
+**Johns Hopkins Bloomberg School of Public Health** · Baltimore, MD · *Jun 2023 – present*
+
+- Lead data science for substance use studies, from study design, randomization and simulation-based power analysis through analysis and dissemination.
+- Run longitudinal analyses for the National Substance Use Data Initiative and a two-phase EHR analysis (Truveta) of cannabis hyperemesis syndrome.
+- Fit mixed-effects, GEE, SEM and latent growth models across cross-sectional, longitudinal, RCT and intensive longitudinal (EMA, wearable, GPS) data, and handle missing data with FIML, multiple imputation and sensitivity analyses.
+- Build time-series ML and deep-learning pipelines in Python (scikit-learn, PyTorch, TensorFlow).
+- Engineer EMA data pipelines and multi-source harmonization in R with structured QC.
+- Direct participant recruitment, including social media campaigns for a micro-randomized trial and partnerships with recruitment vendors. Manage recruitment budgets.
+- Prepare DSMB and NIH sponsor reports. Maintain full HIPAA and IRB compliance. Publish codebooks and analysis code on GitHub.
+- Led lab-wide adoption of documentation SOPs, version-controlled pipelines and a shared data dictionary. Review code and mentor staff and graduate students.
+
+### Senior Research Assistant
+**Johns Hopkins Bloomberg School of Public Health** · *Oct 2020 – Jun 2023*
+
+- Built REDCap and Qualtrics tools for TB screening and substance use studies, and Excel VBA tools for cost-effectiveness data collection.
+- Managed databases, codebooks and QA/QC. Supported IRB submissions.
+- Analyzed data in R (regression, GEE, ICC, factor and cluster analysis, meta-analysis) for mHealth substance use research and a 32-site HIV costing study in Zambia.
+
+### Research Assistant
+**Johns Hopkins Bloomberg School of Public Health** · *May 2019 – Oct 2020*
+
+- Built REDCap instruments, extracted EMR data (Epic, CRMS), and screened, consented and followed participants in chronic lung disease research.
+
+### Health Assistant & Referral Health Worker
+**International Organization for Migration** · Kathmandu, Nepal · *May 2015 – May 2016*
+
+- Carried out public health assessments in post-earthquake displacement camps. Built a TB surveillance and referral system and coordinated care with NGOs and government partners.
+
+## Education
+
+| Degree | Institution | Year |
+|---|---|---|
+| MS, Data Science | Maryville University, St. Louis, MO | 2022 |
+| MS, Public Health in Disaster | University of Oviedo, Spain | 2018 |
+| MS, Nutrition and Dietetics | College of Applied Food and Dairy Technology, Kathmandu | 2017 |
+| BS, Public Health | Nobel College, Kathmandu | 2014 |
+
+## Skills
+
+**Statistical methods**
+
+::: {.skill-chips}
+[Mixed-effects models (lme4, nlme, glmmTMB)]{} [GEE]{} [SEM (lavaan)]{} [Latent growth models]{} [Bayesian methods]{} [Time-series]{} [FIML & multiple imputation]{} [Power analysis & simulation]{} [Psychometrics]{} [Meta-analysis (metafor, meta)]{}
+:::
+
+**Programming & ML**
+
+::: {.skill-chips}
+[R (advanced)]{} [Python (advanced)]{} [SQL / PostgreSQL]{} [SAS]{} [Stata]{} [scikit-learn]{} [PyTorch]{} [TensorFlow]{} [NLP]{}
+:::
+
+**Data engineering, visualization & tools**
+
+::: {.skill-chips}
+[Data pipelines & harmonization]{} [REDCap]{} [Qualtrics]{} [Epic EMR]{} [Quarto / R Markdown]{} [ggplot2]{} [Plotly]{} [R Shiny]{} [gt / gtsummary]{} [Tableau]{} [QGIS]{} [Git / GitHub]{}
+:::
+
+**Research operations & governance**
+
+::: {.skill-chips}
+[Study & trial design]{} [Recruitment & retention]{} [DSMB reporting]{} [HIPAA]{} [IRB]{} [QA/QC]{} [Open science]{}
+:::
+
+## Publications
+
+See the [Publications](publications.qmd) page.
