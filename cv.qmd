@@ -7,10 +7,11 @@ title: "Curriculum Vitae"
 
 ## Experience
 
-### Research Associate (Faculty)
-**Johns Hopkins Bloomberg School of Public Health** · Baltimore, MD · *Jun 2023 – present*
+### Faculty Research Associate · Lead Biostatistician & Data Scientist
+**Department of Mental Health, Johns Hopkins Bloomberg School of Public Health** · Baltimore, MD · *Jun 2023 – present*
 
-- Lead data science for substance use studies, from study design, randomization and simulation-based power analysis through analysis and dissemination.
+- Lead biostatistics and data science for multidisciplinary studies of substance use, substance use disorders, and behavioral health, with a focus on addiction and overdose prevention and on mental and digital health.
+- Work across the full study lifecycle: study design, social media recruitment, building and testing data-collection infrastructure, randomization, and analysis and interpretation of complex data, including EMA and micro-randomized trials.
 - Run longitudinal analyses for the National Substance Use Data Initiative and a two-phase EHR analysis (Truveta) of cannabis hyperemesis syndrome.
 - Fit mixed-effects, GEE, SEM and latent growth models across cross-sectional, longitudinal, RCT and intensive longitudinal (EMA, wearable, GPS) data, and handle missing data with FIML, multiple imputation and sensitivity analyses.
 - Build time-series ML and deep-learning pipelines in Python (scikit-learn, PyTorch, TensorFlow).
