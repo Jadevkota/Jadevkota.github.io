@@ -37,7 +37,11 @@ website:
         aria-label: GitHub
   page-footer:
     left: "© 2026 Janardan Devkota"
-    right: "Built with R + Quarto · Deployed with GitHub Actions"
+    right:
+      - text: "Built with R + Quarto"
+      - icon: bar-chart-line
+        href: "https://jadevkota.goatcounter.com"
+        aria-label: "Site statistics (private)"
 
 format:
   html:
