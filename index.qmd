@@ -15,7 +15,7 @@ image: profile.jpg
 
 [Janardan Devkota]{.hero-name}
 
-[Faculty Research Associate · Lead Biostatistician & Data Scientist]{.hero-role}
+[Faculty Research Associate]{.hero-role}
 
 [Department of Mental Health, Johns Hopkins Bloomberg School of Public Health]{.hero-org}
 
@@ -49,19 +49,19 @@ cat(sprintf(
 :::
 :::', nrow(pubs), min(pubs$year), max(pubs$year)))
 ```
-:::
 
-:::
-
-::: {.home-grid}
-
-::: {.home-col}
+::: {.interests}
 ### Research interests
 
 ::: {.skill-chips}
 [Addiction & overdose prevention]{} [Cannabis, opioid, tobacco & alcohol use]{} [Mental & digital health]{} [Ecological momentary assessment]{} [Micro-randomized trials & just-in-time interventions]{} [Clinical trials]{} [Electronic health records (EHR)]{} [Chronic pain]{} [Infectious disease epidemiology]{} [Psychometrics]{} [Spatiotemporal methods]{} [Reproducible health data science]{}
 :::
 :::
+:::
+
+:::
+
+::: {.home-grid}
 
 ::: {.home-col}
 ### Education

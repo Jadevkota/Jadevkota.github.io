@@ -29,7 +29,7 @@ figure img { border-radius: 6px; }
 .contact-card .bi { color: $primary; margin-right: .3rem; }
 
 /* Wide home page: sections side by side */
-.home-grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+.home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
 .home-col { padding: 1rem 1.2rem; border: 1px solid rgba($primary, .15); border-radius: 10px; }
 .home-col h3 { margin-top: 0; font-size: 1.15rem; }
 .home-col ul { padding-left: 1.1rem; margin-bottom: 0; }
@@ -54,3 +54,7 @@ figure img { border-radius: 6px; }
 
 .home-page #title-block-header { display: none; }
 .home-col .skill-chips span { font-size: .84em; margin: 0 .3rem .4rem 0; }
+
+.interests { margin-top: 1.3rem; }
+.interests h3 { font-size: 1.15rem; margin: 0 0 .6rem; }
+.interests .skill-chips span { font-size: .86em; margin: 0 .3rem .45rem 0; }
