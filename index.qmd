@@ -4,7 +4,10 @@ subtitle: "Research Associate (Faculty) & Data Scientist · Johns Hopkins Bloomb
 toc: false
 about:
   template: trestles
-  image: profile.svg
+  image: profile.jpg
+  image-shape: rounded
+  image-width: 15em
+image: profile.jpg
   links:
     - icon: linkedin
       text: LinkedIn
