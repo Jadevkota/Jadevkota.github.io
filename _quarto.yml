@@ -17,9 +17,9 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
-      # Hidden for now; pages still exist. Uncomment to show again.
-      # - href: methods.qmd
-      #   text: Methods
+      - href: methods.qmd
+        text: Methods
+      # Blog hidden for now; uncomment to show again.
       # - href: blog.qmd
       #   text: Blog
       - href: cv.qmd
