@@ -48,6 +48,7 @@ format:
     code-fold: show
     code-tools: true
     smooth-scroll: true
+    include-in-header: analytics.html
 
 execute:
   freeze: auto   # results are cached in _freeze/ — commit that folder

@@ -31,3 +31,9 @@ After that, every push to `main` rebuilds and redeploys the site.
 - `freeze: auto` caches R results in `_freeze/`. Run `quarto render` locally and commit `_freeze/` so CI doesn't re-run heavy code.
 - Add R packages to the `packages:` list in `.github/workflows/publish.yml`, or switch to `renv` (`renv::init()` + `r-lib/actions/setup-renv@v2`).
 - New blog post: create `posts/my-post/index.qmd`.
+
+## Visitor statistics
+
+GoatCounter (no cookies) is loaded on every page via `analytics.html`.
+Dashboard: https://jadevkota.goatcounter.com — page views, referrers, countries, devices,
+and outbound link clicks (listed as "click: …" events).

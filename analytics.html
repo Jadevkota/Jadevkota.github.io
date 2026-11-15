@@ -1,0 +1,17 @@
+<!-- GoatCounter: privacy-friendly analytics, no cookies. Dashboard: https://jadevkota.goatcounter.com -->
+<script data-goatcounter="https://jadevkota.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  // Count clicks on outbound links (DOI, PubMed, LinkedIn, email, ...) as events
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a || !window.goatcounter || !window.goatcounter.count) return;
+    var url = a.href;
+    var external = url.indexOf("mailto:") === 0 || (a.host && a.host !== location.host);
+    if (!external) return;
+    window.goatcounter.count({
+      path: "click: " + url.replace(/^mailto:/, "email: ").replace(/^https?:\/\//, ""),
+      title: (a.textContent || "").trim().slice(0, 80),
+      event: true
+    });
+  });
+</script>
