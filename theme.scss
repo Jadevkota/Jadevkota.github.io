@@ -27,3 +27,30 @@ figure img { border-radius: 6px; }
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
 .contact-card { padding: 1rem 1.2rem; border: 1px solid rgba($primary, .2); border-radius: 10px; line-height: 1.6; }
 .contact-card .bi { color: $primary; margin-right: .3rem; }
+
+/* Wide home page: sections side by side */
+.home-grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+.home-col { padding: 1rem 1.2rem; border: 1px solid rgba($primary, .15); border-radius: 10px; }
+.home-col h3 { margin-top: 0; font-size: 1.15rem; }
+.home-col ul { padding-left: 1.1rem; margin-bottom: 0; }
+.home-col li { margin-bottom: .4rem; font-size: .95em; }
+@media (max-width: 991.98px) { .home-grid { grid-template-columns: 1fr; } }
+
+/* Custom wide home hero */
+.hero { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 2.5rem; align-items: start; margin-top: .5rem; }
+.hero-left { text-align: center; }
+.hero-left p { margin-bottom: .35rem; }
+.hero-photo { width: 220px; height: 220px; object-fit: cover; border-radius: 14px; margin-bottom: .6rem; }
+.hero-name { display: block; font-size: 1.7rem; font-weight: 700; }
+.hero-role { display: block; font-weight: 600; color: $primary; line-height: 1.35; }
+.hero-org { display: block; color: $text-muted; font-size: .95em; line-height: 1.35; }
+.hero-links { margin-top: .8rem; display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; }
+.hero-links p { display: contents; }
+.hero-right > p:first-child { margin-top: 0; }
+.stat-row > div { padding: .6rem 1rem; }
+.stat-row p { margin: 0; }
+.stat-row .num { font-size: 1.5rem; }
+@media (max-width: 991.98px) { .hero { grid-template-columns: 1fr; gap: 1.2rem; } }
+
+.home-page #title-block-header { display: none; }
+.home-col .skill-chips span { font-size: .84em; margin: 0 .3rem .4rem 0; }

@@ -1,28 +1,33 @@
 ---
 title: "Janardan Devkota"
-subtitle: "Faculty Research Associate · Lead Biostatistician & Data Scientist<br>Department of Mental Health, Johns Hopkins Bloomberg School of Public Health"
+pagetitle: "Janardan Devkota"
+title-block-style: none
 toc: false
+page-layout: full
+body-classes: home-page
 image: profile.jpg
-about:
-  template: trestles
-  image: profile.jpg
-  image-shape: rounded
-  image-width: 15em
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: "https://www.linkedin.com/in/jdevkota/"
-    - icon: mortarboard-fill
-      text: Google Scholar
-      href: "https://scholar.google.com/citations?user=6iIeMA0AAAAJ"
-    - icon: github
-      text: GitHub
-      href: "https://github.com/Jadevkota"
-    - icon: envelope
-      text: Contact
-      href: contact.qmd
 ---
 
+::: {.hero}
+
+::: {.hero-left}
+![](profile.jpg){.hero-photo fig-alt="Janardan Devkota"}
+
+[Janardan Devkota]{.hero-name}
+
+[Faculty Research Associate · Lead Biostatistician & Data Scientist]{.hero-role}
+
+[Department of Mental Health, Johns Hopkins Bloomberg School of Public Health]{.hero-org}
+
+::: {.hero-links}
+[<i class="bi bi-linkedin"></i> LinkedIn](https://www.linkedin.com/in/jdevkota/){.btn .btn-outline-primary .btn-sm}
+[<i class="bi bi-mortarboard-fill"></i> Scholar](https://scholar.google.com/citations?user=6iIeMA0AAAAJ){.btn .btn-outline-primary .btn-sm}
+[<i class="bi bi-github"></i> GitHub](https://github.com/Jadevkota){.btn .btn-outline-primary .btn-sm}
+[<i class="bi bi-envelope"></i> Contact](contact.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.hero-right}
 I have worked at the Johns Hopkins Bloomberg School of Public Health (BSPH) for about seven years, and I am currently a **Faculty Research Associate in the Department of Mental Health**. I serve as **lead biostatistician and data scientist** on multidisciplinary research into substance use, substance use disorders, and behavioral health at the [Thrul Lab](https://www.thrulresearchlab.com/). This work sits where public health, data science, biostatistics, psychology, and health informatics meet. My focus is **addiction and overdose prevention**, along with **mental and digital health**.
 
 I work across the full research lifecycle. I collaborate on study design, recruit participants through social media campaigns, and build and test data-collection infrastructure. I also randomize participants across study arms, and I manage, analyze, and interpret complex datasets. Much of this work uses digital technology to understand and address substance use. With **ecological momentary assessment (EMA)** and **micro-randomized trial** designs, we capture people's behaviors and experiences in real time and test interventions in real-world settings. My data sources also include cross-sectional surveys, prospective cohorts, randomized trials, wearables, smartphone GPS, and electronic health records.
@@ -44,19 +49,34 @@ cat(sprintf(
 :::
 :::', nrow(pubs), min(pubs$year), max(pubs$year)))
 ```
+:::
 
+:::
+
+::: {.home-grid}
+
+::: {.home-col}
 ### Research interests
 
-Addiction & overdose prevention · Cannabis, opioid, tobacco & alcohol use · Mental & digital health · Ecological momentary assessment · Micro-randomized trials & just-in-time interventions · Chronic pain · Spatiotemporal methods · Reproducible health data science
+::: {.skill-chips}
+[Addiction & overdose prevention]{} [Cannabis, opioid, tobacco & alcohol use]{} [Mental & digital health]{} [Ecological momentary assessment]{} [Micro-randomized trials & just-in-time interventions]{} [Clinical trials]{} [Electronic health records (EHR)]{} [Chronic pain]{} [Infectious disease epidemiology]{} [Psychometrics]{} [Spatiotemporal methods]{} [Reproducible health data science]{}
+:::
+:::
 
+::: {.home-col}
 ### Education
 
 - **MS, Data Science**, Maryville University, St. Louis, MO (2022)
 - **MS, Public Health in Disaster**, University of Oviedo, Spain (2018)
 - **MS, Nutrition and Dietetics**, College of Applied Food and Dairy Technology, Kathmandu (2017)
 - **BS, Public Health**, Nobel College, Kathmandu (2014)
+:::
 
+::: {.home-col}
 ### Recent training
 
 - **[Clinical Trials Certificate Program](https://american-statistical-association.github.io/clinical-trials-cert/#about)** (Inaugural Cohort, in progress), American Statistical Association (Sep 2026 – present)
 - **[DAIR3 Bootcamp: Data and AI Intensive Research with Rigor and Reproducibility](https://midas.umich.edu/training/dair-3/)**, University of Michigan (May 2026)
+:::
+
+:::
