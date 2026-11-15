@@ -45,6 +45,18 @@ title: "Curriculum Vitae"
 | MS, Nutrition and Dietetics | College of Applied Food and Dairy Technology, Kathmandu | 2017 |
 | BS, Public Health | Nobel College, Kathmandu | 2014 |
 
+## Training & Certifications
+
+### Clinical Trials Certificate Program (Inaugural Cohort, In Progress)
+**[American Statistical Association](https://american-statistical-association.github.io/clinical-trials-cert/#about)** · *Sep 2026 – present*
+
+Cohort-based training in clinical trial design, analysis, and conduct.
+
+### Data and AI Intensive Research with Rigor and Reproducibility (DAIR3) Bootcamp
+**[University of Michigan](https://midas.umich.edu/training/dair-3/)** · *May 2026*
+
+Biomedical data ethics, data sharing, rigorous design, AI model reporting, generative AI, and reproducible workflows.
+
 ## Skills
 
 **Statistical methods**
