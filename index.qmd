@@ -2,12 +2,12 @@
 title: "Janardan Devkota"
 subtitle: "Research Associate (Faculty) & Data Scientist · Johns Hopkins Bloomberg School of Public Health"
 toc: false
+image: profile.jpg
 about:
   template: trestles
   image: profile.jpg
   image-shape: rounded
   image-width: 15em
-image: profile.jpg
   links:
     - icon: linkedin
       text: LinkedIn
