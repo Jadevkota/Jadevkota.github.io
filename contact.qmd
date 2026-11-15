@@ -1,0 +1,35 @@
+---
+title: "Contact"
+toc: false
+---
+
+I'm happy to hear about research collaborations, statistical consulting, data science questions, and speaking or mentoring opportunities.
+
+::: {.contact-grid}
+
+::: {.contact-card}
+<i class="bi bi-envelope-fill"></i> **Email**<br>
+[jadevkota@gmail.com](mailto:jadevkota@gmail.com)
+:::
+
+::: {.contact-card}
+<i class="bi bi-geo-alt-fill"></i> **Location**<br>
+Johns Hopkins Bloomberg School of Public Health<br>Baltimore, MD
+:::
+
+::: {.contact-card}
+<i class="bi bi-linkedin"></i> **LinkedIn**<br>
+[linkedin.com/in/jdevkota](https://www.linkedin.com/in/jdevkota/)
+:::
+
+::: {.contact-card}
+<i class="bi bi-mortarboard-fill"></i> **Google Scholar**<br>
+[Publications & citations](https://scholar.google.com/citations?user=6iIeMA0AAAAJ)
+:::
+
+::: {.contact-card}
+<i class="bi bi-github"></i> **GitHub**<br>
+[github.com/Jadevkota](https://github.com/Jadevkota)
+:::
+
+:::

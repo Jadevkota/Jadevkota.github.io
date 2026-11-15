@@ -18,6 +18,9 @@ about:
     - icon: github
       text: GitHub
       href: "https://github.com/Jadevkota"
+    - icon: envelope
+      text: Contact
+      href: contact.qmd
 ---
 
 I'm a data scientist working in **substance use epidemiology** at Johns Hopkins. I design studies and build the analytic and data-engineering infrastructure behind them: cross-sectional surveys, prospective cohorts, randomized and micro-randomized trials, intensive longitudinal data (EMA, wearables, smartphone GPS), and electronic health records.

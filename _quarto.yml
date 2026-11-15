@@ -23,6 +23,8 @@ website:
         text: Blog
       - href: cv.qmd
         text: CV
+      - href: contact.qmd
+        text: Contact
     right:
       - icon: linkedin
         href: "https://www.linkedin.com/in/jdevkota/"

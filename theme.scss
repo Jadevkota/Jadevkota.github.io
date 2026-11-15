@@ -23,3 +23,7 @@ figure img { border-radius: 6px; }
   border: 1px solid rgba($primary, .2);
 }
 .stat-row .num { font-size: 1.7rem; font-weight: 700; color: $primary; display: block; }
+
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.contact-card { padding: 1rem 1.2rem; border: 1px solid rgba($primary, .2); border-radius: 10px; line-height: 1.6; }
+.contact-card .bi { color: $primary; margin-right: .3rem; }
