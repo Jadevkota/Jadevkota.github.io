@@ -23,11 +23,9 @@ about:
       href: contact.qmd
 ---
 
-I am a **Faculty Research Associate in the Department of Mental Health** at the Johns Hopkins Bloomberg School of Public Health (BSPH), where I have worked for about seven years. I serve as **lead biostatistician and data scientist** on multidisciplinary research into substance use, substance use disorders, and behavioral health at the [Thrul Lab](https://www.thrulresearchlab.com/). This work sits where public health, data science, biostatistics, psychology, and health informatics meet. My focus is **addiction and overdose prevention**, along with **mental and digital health**.
+I have worked at the Johns Hopkins Bloomberg School of Public Health (BSPH) for about seven years, and I am currently a **Faculty Research Associate in the Department of Mental Health**. I serve as **lead biostatistician and data scientist** on multidisciplinary research into substance use, substance use disorders, and behavioral health at the [Thrul Lab](https://www.thrulresearchlab.com/). This work sits where public health, data science, biostatistics, psychology, and health informatics meet. My focus is **addiction and overdose prevention**, along with **mental and digital health**.
 
 I work across the full research lifecycle. I collaborate on study design, recruit participants through social media campaigns, and build and test data-collection infrastructure. I also randomize participants across study arms, and I manage, analyze, and interpret complex datasets. Much of this work uses digital technology to understand and address substance use. With **ecological momentary assessment (EMA)** and **micro-randomized trial** designs, we capture people's behaviors and experiences in real time and test interventions in real-world settings. My data sources also include cross-sectional surveys, prospective cohorts, randomized trials, wearables, smartphone GPS, and electronic health records.
-
-Most of my analytic work is in **R** and **Python**: multilevel and mixed-effects models, GEE, structural equation and latent growth models, principled handling of missing data, simulation-based power analysis, and machine learning for time-series and sensor data. I am committed to reproducible science, so I use version-controlled pipelines, documented codebooks, and open code on GitHub.
 
 ```{r}
 #| echo: false
@@ -42,7 +40,7 @@ cat(sprintf(
 [%d&ndash;%d]{.num} publication years
 :::
 ::: {}
-[7]{.num} years at Johns Hopkins
+[7]{.num} years at Johns Hopkins BSPH
 :::
 :::', nrow(pubs), min(pubs$year), max(pubs$year)))
 ```
