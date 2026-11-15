@@ -66,10 +66,10 @@ cat(sprintf(
 ::: {.home-col}
 ### Education
 
-- **MS, Data Science**, Maryville University, St. Louis, MO (2022)
-- **MS, Public Health in Disaster**, University of Oviedo, Spain (2018)
-- **MS, Nutrition and Dietetics**, College of Applied Food and Dairy Technology, Kathmandu (2017)
-- **BS, Public Health**, Nobel College, Kathmandu (2014)
+- **[MS, Data Science](https://online.maryville.edu/online-masters-degrees/data-science/)**, Maryville University, St. Louis, MO (2022)
+- **[MS, Public Health in Disaster](https://masterpublichealthdisasters.eu/)**, University of Oviedo, Spain (2018)
+- **[MS, Nutrition and Dietetics](https://www.cafodat.edu.np/index.php?page=m.sc.-in-nutrition-and-dietetics)**, College of Applied Food and Dairy Technology, Kathmandu (2017)
+- **[BS, Public Health](https://nobelcollege.edu.np/academic-program/bachelor-of-public-health-bph)**, Nobel College, Kathmandu (2014)
 :::
 
 ::: {.home-col}
