@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-description: "Generated with R from `data/publications.csv`. Add a row to update this page."
+description: "Generated with R from `data/publications.csv`. Add a row (with a `topic`) to update this page."
 ---
 
 ```{r}
@@ -9,6 +9,27 @@ description: "Generated with R from `data/publications.csv`. Add a row to update
 library(ggplot2)
 pubs <- read.csv("data/publications.csv", stringsAsFactors = FALSE)
 pubs <- pubs[order(-pubs$year, seq_len(nrow(pubs))), ]
+topic_order <- c("Tobacco & Smoking Cessation", "Cannabis", "Opioids & Chronic Pain",
+                 "Alcohol", "Digital Well-being", "HIV, Global & Child Health")
+topic_order <- c(topic_order, setdiff(unique(pubs$topic), topic_order))
+
+fmt_pub <- function(p) {
+  authors <- gsub("Devkota J", "**Devkota J**", p$authors, fixed = TRUE)
+  if (isTRUE(p$equal_first) || identical(p$equal_first, "True"))
+    authors <- sub("**Devkota J**", "**Devkota J**<sup>\\*</sup>", authors, fixed = TRUE)
+  links <- c(
+    if (nzchar(p$doi))   sprintf("[DOI](https://doi.org/%s){.badge-link .badge .text-bg-primary}", p$doi),
+    if (!is.na(p$pmid) && nzchar(p$pmid)) sprintf("[PubMed](https://pubmed.ncbi.nlm.nih.gov/%s/){.badge-link .badge .text-bg-secondary}", p$pmid),
+    if (nzchar(p$pmcid)) sprintf("[Full text](https://www.ncbi.nlm.nih.gov/pmc/articles/%s/){.badge-link .badge .text-bg-success}", p$pmcid)
+  )
+  sprintf("- [%s.]{.pub-title}<br>%s.<br>[*%s*, %d]{.pub-meta}<br>%s",
+          p$title, authors, p$journal, p$year, paste(links, collapse = " "))
+}
+print_group <- function(heading, sub, level = "###") {
+  cat("\n", level, " ", heading, " [", nrow(sub), "]{.badge .rounded-pill .text-bg-light}\n\n::: {.pub-list}\n", sep = "")
+  for (i in seq_len(nrow(sub))) cat(fmt_pub(sub[i, ]), "\n", sep = "")
+  cat(":::\n")
+}
 ```
 
 For the most current list, see my [Google Scholar profile](https://scholar.google.com/citations?user=6iIeMA0AAAAJ). <sup>\*</sup> marks equal first authorship.
@@ -27,26 +48,28 @@ ggplot(pubs, aes(factor(year))) +
   theme(panel.grid = element_blank(), axis.text.y = element_blank())
 ```
 
+::: {.panel-tabset}
+
+## By research area
+
 ```{r}
-#| label: pub-list
+#| label: pub-by-topic
 #| echo: false
 #| output: asis
-fmt_pub <- function(p) {
-  authors <- gsub("Devkota J", "**Devkota J**", p$authors, fixed = TRUE)
-  if (isTRUE(p$equal_first) || identical(p$equal_first, "True"))
-    authors <- sub("**Devkota J**", "**Devkota J**<sup>\\*</sup>", authors, fixed = TRUE)
-  links <- c(
-    if (nzchar(p$doi))   sprintf("[DOI](https://doi.org/%s){.badge-link .badge .text-bg-primary}", p$doi),
-    if (!is.na(p$pmid) && nzchar(p$pmid)) sprintf("[PubMed](https://pubmed.ncbi.nlm.nih.gov/%s/){.badge-link .badge .text-bg-secondary}", p$pmid),
-    if (nzchar(p$pmcid)) sprintf("[Full text](https://www.ncbi.nlm.nih.gov/pmc/articles/%s/){.badge-link .badge .text-bg-success}", p$pmcid)
-  )
-  sprintf("- [%s.]{.pub-title}<br>%s.<br>[*%s*, %d]{.pub-meta}<br>%s",
-          p$title, authors, p$journal, p$year, paste(links, collapse = " "))
-}
-for (yr in unique(pubs$year)) {
-  cat("\n## ", yr, "\n\n::: {.pub-list}\n", sep = "")
-  sub <- pubs[pubs$year == yr, ]
-  for (i in seq_len(nrow(sub))) cat(fmt_pub(sub[i, ]), "\n", sep = "")
-  cat(":::\n")
-}
+for (tp in topic_order) print_group(tp, pubs[pubs$topic == tp, ])
 ```
+
+## By year
+
+```{r}
+#| label: pub-by-year
+#| echo: false
+#| output: asis
+for (yr in unique(pubs$year)) print_group(yr, pubs[pubs$year == yr, ])
+```
+
+:::
+
+### View more publications on
+
+[Google Scholar](https://scholar.google.com/citations?user=6iIeMA0AAAAJ){.btn .btn-outline-primary .btn-sm} [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Devkota+J%5BAuthor%5D){.btn .btn-outline-primary .btn-sm}
