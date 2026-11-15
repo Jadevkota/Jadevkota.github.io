@@ -1,72 +1,15 @@
 ---
-title: "Methods showcase"
-description: "A worked example of the kind of analysis I do: a multilevel model for simulated EMA data, with a simulation-based power check."
+title: "Methods"
+description: "Learning resources on statistical methods I use in my work."
+toc: false
 ---
 
-Ecological momentary assessment (EMA) yields many repeated prompts nested within participants. Below I simulate a small EMA study, fit a random-intercept, random-slope model with **lme4**, and estimate power by simulation. The data are simulated; no real participant data are used.
+- **Structural Equation Modeling (SEM)** [\[[External Link](https://stats.oarc.ucla.edu/r/seminars/rsem/)\]]{.ext-link}
+- **Multilevel Model (MLM)** [\[[External Link](https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions)\]]{.ext-link}
+- **Hierarchical Linear Modeling (HLM)** [[External Link]]{.ext-link .text-muted}
+- **Longitudinal SEM/HLM** [[External Link]]{.ext-link .text-muted}
+- **Systematic Review/Meta-analyses** [[External Link]]{.ext-link .text-muted}
 
-## Simulate EMA data
-
-```{r}
-#| label: setup
-#| message: false
-library(lme4)
-library(dplyr)
-library(ggplot2)
-set.seed(2026)
-
-sim_ema <- function(n_id = 60, n_prompts = 42, b_stress = 0.35) {
-  ids <- tibble(id = factor(seq_len(n_id)),
-                u0 = rnorm(n_id, 0, 0.8),      # person-level intercept
-                u1 = rnorm(n_id, 0, 0.15))     # person-level slope
-  tidyr::expand_grid(id = ids$id, prompt = seq_len(n_prompts)) |>
-    left_join(ids, by = "id") |>
-    mutate(stress   = rnorm(n()),               # within-person (centered) stress
-           craving  = 2 + u0 + (b_stress + u1) * stress + rnorm(n(), 0, 1),
-           answered = rbinom(n(), 1, 0.78) == 1) |>   # ~78% EMA compliance
-    filter(answered)
-}
-
-ema <- sim_ema()
-glimpse(ema)
-```
-
-## Fit a multilevel model
-
-```{r}
-#| label: model
-fit <- lmer(craving ~ stress + (1 + stress | id), data = ema)
-summary(fit)$coefficients |> round(3)
-VarCorr(fit)
-```
-
-```{r}
-#| label: fig-slopes
-#| fig-cap: "Person-specific stress–craving slopes (random effects) around the fixed effect"
-pred <- ema |> mutate(fitted = fitted(fit))
-ggplot(pred, aes(stress, fitted, group = id)) +
-  geom_line(alpha = .25, colour = "#1f4e79") +
-  geom_abline(intercept = fixef(fit)[1], slope = fixef(fit)[2], linewidth = 1.2, colour = "#c0392b") +
-  labs(x = "Momentary stress (within-person, SD units)", y = "Predicted craving") +
-  theme_minimal(base_size = 13)
-```
-
-## Simulation-based power
-
-```{r}
-#| label: power
-power_at <- function(n_id, reps = 100, b = 0.15) {
-  hits <- replicate(reps, {
-    d <- sim_ema(n_id = n_id, b_stress = b)
-    m <- suppressMessages(lmer(craving ~ stress + (1 + stress | id), data = d,
-                               control = lmerControl(check.conv.singular = "ignore")))
-    abs(coef(summary(m))["stress", "t value"]) > 1.96
-  })
-  mean(hits)
-}
-power_tbl <- tibble(n_id = c(20, 40, 60, 80)) |>
-  mutate(power = vapply(n_id, power_at, numeric(1)))
-knitr::kable(power_tbl, digits = 2, col.names = c("Participants", "Power (β = 0.15)"))
-```
-
-Because `freeze: auto` is set, this simulation runs only when the page changes locally, and CI reuses the cached results.
+::: {.callout-note appearance="simple"}
+**Disclaimer:** External links are provided for educational purposes only. The author is not responsible for the content of these external sites. Please refer to the original authors listed on the respective documents/pages for further information or clarifications.
+:::

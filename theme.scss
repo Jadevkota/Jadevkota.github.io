@@ -61,3 +61,7 @@ figure img { border-radius: 6px; }
 
 .home-bottom { margin-top: 1.5rem; }
 .home-bottom .stat-row { margin-top: 0; }
+
+/* Bold hyperlinks on the home page */
+.home-page main a:not(.btn) { font-weight: 700; }
+.ext-link { margin-left: .25rem; }

@@ -17,10 +17,11 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
-      - href: methods.qmd
-        text: Methods
-      - href: blog.qmd
-        text: Blog
+      # Hidden for now; pages still exist. Uncomment to show again.
+      # - href: methods.qmd
+      #   text: Methods
+      # - href: blog.qmd
+      #   text: Blog
       - href: cv.qmd
         text: CV
       - href: contact.qmd
