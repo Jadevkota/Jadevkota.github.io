@@ -8,6 +8,7 @@ toc: false
 - **Multilevel Model (MLM)** [\[[External Link](https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions)\]]{.ext-link}
 - **Hierarchical Linear Modeling (HLM)** [\[[External Link 1](https://dlab.berkeley.edu/news/basic-introduction-hierarchical-linear-modeling)\]]{.ext-link} [\[[External Link 2](https://pubmed.ncbi.nlm.nih.gov/28092277/)\]]{.ext-link}
 - **Systematic Review/Meta-analyses** [\[[External Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC12366998/)\]]{.ext-link}
+- **Sample Size Estimation and Power Analysis** [\[[External Link 1](https://ladal.edu.au/tutorials/power_analysis/power_analysis.html)\]]{.ext-link} [\[[External Link 2](https://beckerguides.wustl.edu/c.php?g=1345263&p=9922888)\]]{.ext-link} [\[[External Link 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC6701714/)\]]{.ext-link} [\[[External Link 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC4916819/)\]]{.ext-link} [\[[External Link 5](https://pmc.ncbi.nlm.nih.gov/articles/PMC4054560/)\]]{.ext-link}
 
 ::: {.callout-note appearance="simple"}
 **Disclaimer:** External links are provided for educational purposes only. The author is not responsible for the content of these external sites. Please refer to the original authors listed on the respective documents/pages for further information or clarifications.
