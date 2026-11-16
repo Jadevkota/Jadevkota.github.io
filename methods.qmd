@@ -2,14 +2,56 @@
 title: "Methods"
 description: "Learning resources on statistical methods I use in my work."
 toc: false
+page-layout: full
 ---
 
-- **Structural Equation Modeling (SEM)** [\[[External Link](https://stats.oarc.ucla.edu/r/seminars/rsem/)\]]{.ext-link}
-- **Multilevel Model (MLM)** [\[[External Link](https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions)\]]{.ext-link}
-- **Hierarchical Linear Modeling (HLM)** [\[[External Link 1](https://dlab.berkeley.edu/news/basic-introduction-hierarchical-linear-modeling)\]]{.ext-link} [\[[External Link 2](https://pubmed.ncbi.nlm.nih.gov/28092277/)\]]{.ext-link}
-- **Systematic Review/Meta-analyses** [\[[External Link 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC12366998/)\]]{.ext-link} [\[[External Link 2](https://doing-meta.guide/)\]]{.ext-link}
-- **Sample Size Estimation and Power Analysis** [\[[External Link 1](https://ladal.edu.au/tutorials/power_analysis/power_analysis.html)\]]{.ext-link} [\[[External Link 2](https://beckerguides.wustl.edu/c.php?g=1345263&p=9922888)\]]{.ext-link} [\[[External Link 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC6701714/)\]]{.ext-link} [\[[External Link 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC4916819/)\]]{.ext-link} [\[[External Link 5](https://pmc.ncbi.nlm.nih.gov/articles/PMC4054560/)\]]{.ext-link}
-- **Randomization in Clinical Trials** [\[[External Link 1](https://www.cancer.gov/clinical-trial-randomization-infographic)\]]{.ext-link} [\[[External Link 2](https://link.springer.com/article/10.1186/s12874-021-01303-z)\]]{.ext-link} [\[[External Link 3](https://www.tandfonline.com/doi/abs/10.1080/19466315.2023.2225451)\]]{.ext-link}
+::: {.methods-grid}
+
+::: {.method-card}
+### Structural Equation Modeling (SEM)
+
+- [UCLA OARC: SEM in R seminar](https://stats.oarc.ucla.edu/r/seminars/rsem/)
+:::
+
+::: {.method-card}
+### Multilevel Model (MLM)
+
+- [Penn State QuantDev: MLM and interactions in R](https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions)
+:::
+
+::: {.method-card}
+### Hierarchical Linear Modeling (HLM)
+
+- [Berkeley D-Lab: Basic introduction to HLM](https://dlab.berkeley.edu/news/basic-introduction-hierarchical-linear-modeling)
+- [PubMed article (PMID 28092277)](https://pubmed.ncbi.nlm.nih.gov/28092277/)
+:::
+
+::: {.method-card}
+### Systematic Review/Meta-analyses
+
+- [PMC article (PMC12366998)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12366998/)
+- [Doing Meta-Analysis in R (online guide)](https://doing-meta.guide/)
+:::
+
+::: {.method-card}
+### Sample Size Estimation and Power Analysis
+
+- [LADAL: Power analysis tutorial](https://ladal.edu.au/tutorials/power_analysis/power_analysis.html)
+- [WashU Becker Library guide](https://beckerguides.wustl.edu/c.php?g=1345263&p=9922888)
+- [PMC article (PMC6701714)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6701714/)
+- [PMC article (PMC4916819)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4916819/)
+- [PMC article (PMC4054560)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4054560/)
+:::
+
+::: {.method-card}
+### Randomization in Clinical Trials
+
+- [National Cancer Institute: Randomization infographic](https://www.cancer.gov/clinical-trial-randomization-infographic)
+- [BMC Medical Research Methodology (2021)](https://link.springer.com/article/10.1186/s12874-021-01303-z)
+- [Statistics in Biopharmaceutical Research (2023)](https://www.tandfonline.com/doi/abs/10.1080/19466315.2023.2225451)
+:::
+
+:::
 
 ::: {.callout-note appearance="simple"}
 **Disclaimer:** External links are provided for educational purposes only. The author is not responsible for the content of these external sites. Please refer to the original authors listed on the respective documents/pages for further information or clarifications.
