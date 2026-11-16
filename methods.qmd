@@ -6,9 +6,8 @@ toc: false
 
 - **Structural Equation Modeling (SEM)** [\[[External Link](https://stats.oarc.ucla.edu/r/seminars/rsem/)\]]{.ext-link}
 - **Multilevel Model (MLM)** [\[[External Link](https://quantdev.ssri.psu.edu/tutorials/r-bootcamp-introduction-multilevel-model-and-interactions)\]]{.ext-link}
-- **Hierarchical Linear Modeling (HLM)** [[External Link]]{.ext-link .text-muted}
-- **Longitudinal SEM/HLM** [[External Link]]{.ext-link .text-muted}
-- **Systematic Review/Meta-analyses** [[External Link]]{.ext-link .text-muted}
+- **Hierarchical Linear Modeling (HLM)** [\[[External Link 1](https://dlab.berkeley.edu/news/basic-introduction-hierarchical-linear-modeling)\]]{.ext-link} [\[[External Link 2](https://pubmed.ncbi.nlm.nih.gov/28092277/)\]]{.ext-link}
+- **Systematic Review/Meta-analyses** [\[[External Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC12366998/)\]]{.ext-link}
 
 ::: {.callout-note appearance="simple"}
 **Disclaimer:** External links are provided for educational purposes only. The author is not responsible for the content of these external sites. Please refer to the original authors listed on the respective documents/pages for further information or clarifications.
