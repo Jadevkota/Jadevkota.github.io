@@ -17,7 +17,7 @@ image: profile.jpg
 
 [Faculty Research Associate]{.hero-role}
 
-[Department of Mental Health, Johns Hopkins Bloomberg School of Public Health]{.hero-org}
+[[Department of Mental Health](https://publichealth.jhu.edu/departments/mental-health), [Johns Hopkins Bloomberg School of Public Health](https://publichealth.jhu.edu/)]{.hero-org}
 
 ::: {.hero-links}
 [<i class="bi bi-linkedin"></i> LinkedIn](https://www.linkedin.com/in/jdevkota/){.btn .btn-outline-primary .btn-sm}
@@ -28,9 +28,9 @@ image: profile.jpg
 :::
 
 ::: {.hero-right}
-I have worked at the Johns Hopkins Bloomberg School of Public Health (BSPH) for about seven years, and I am currently a **Faculty Research Associate in the Department of Mental Health**. I serve as **lead biostatistician and data scientist** on multidisciplinary research into substance use, substance use disorders, and behavioral health at the [Thrul Lab](https://www.thrulresearchlab.com/). This work sits where public health, data science, biostatistics, psychology, and health informatics meet. My focus is **addiction and overdose prevention**, along with **mental and digital health**.
+I have worked at the [Johns Hopkins Bloomberg School of Public Health](https://publichealth.jhu.edu/) (BSPH) for about seven years, and I am currently a **Faculty Research Associate in the [Department of Mental Health](https://publichealth.jhu.edu/departments/mental-health)**. I serve as **lead biostatistician and data scientist** on multidisciplinary research into substance use, substance use disorders, and behavioral health at the [Thrul Lab](https://www.thrulresearchlab.com/). This work sits where public health, data science, biostatistics, psychology, and health informatics meet. My focus is **addiction and overdose prevention**, along with **mental and digital health**.
 
-I work across the full research lifecycle. I collaborate on study design, recruit participants through social media campaigns, and build and test data-collection infrastructure. I also randomize participants across study arms, and I manage, analyze, and interpret complex datasets. Much of this work uses digital technology to understand and address substance use. With **ecological momentary assessment (EMA)** and **micro-randomized trial** designs, we capture people's behaviors and experiences in real time and test interventions in real-world settings. My data sources also include cross-sectional surveys, prospective cohorts, randomized trials, wearables, smartphone GPS, and electronic health records.
+I work across the full research lifecycle. I collaborate on study design, recruit participants through social media campaigns, and build and test data-collection infrastructure. I also randomize participants across study arms, and I manage, analyze, and interpret complex datasets. Much of this work uses digital technology to understand and address substance use. With **[ecological momentary assessment (EMA)](https://link.springer.com/rwe/10.1007/978-1-4419-1005-9_947)** and **[micro-randomized trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC4732571/)** designs, we capture people's behaviors and experiences in real time and test interventions in real-world settings. My data sources also include cross-sectional surveys, prospective cohorts, randomized trials, wearables, smartphone GPS, and electronic health records.
 
 :::
 
