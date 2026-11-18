@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - googlec80ac7fe61ccc554.html
 
 website:
   title: "Janardan Devkota"
