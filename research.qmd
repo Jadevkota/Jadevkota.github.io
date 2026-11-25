@@ -3,13 +3,15 @@ title: "Research"
 description: "Selected projects and areas of work."
 ---
 
-## National Substance Use Data Initiative (NSDU)
+## Epidemiology, Diagnostic Pathways, and Outcomes of Cannabis Hyperemesis Syndrome (CHS) in a Multi-System EHR Network (Truveta data model)
 
-Multi-year longitudinal analysis combining several data sources to describe cannabis, alcohol and opioid use patterns across analytic phases. The work involves harmonizing different longitudinal datasets into unified analytic files with validation checks.
+PI: Johannes Thrul (BSPH)
 
-## Cannabis hyperemesis syndrome in EHR data (Truveta)
+Co-I(s): Amrit Baral (BSPH); Janardan Devkota(BSPH); Matthew Eisenberg (BSPH); David Wolinsky (BSPH)
 
-A two-phase analysis of the Truveta healthcare data model, turning large-scale clinical records into evidence on cannabis hyperemesis syndrome (CHS).
+Project Description:
+
+Our Phase II Truveta project will investigate the epidemiology, diagnostic pathways, and clinical management of Cannabis Hyperemesis Syndrome (CHS) using Truveta’s multi-system electronic health record network. CHS is a condition characterized by recurrent episodes of severe nausea, vomiting, and abdominal pain among individuals who use cannabis frequently. It is an increasingly recognized complication of chronic cannabis use, yet remains understudied, often misdiagnosed, and inconsistently treated in emergency care settings. By examining patterns of diagnosis, imaging, treatment, and readmissions across diverse health systems, this project will generate the first large-scale evidence to inform diagnostic stewardship and improve patient care for CHS.
 
 ## Smartphone-based smoking interventions for young adults
 
